@@ -1,0 +1,11 @@
+[33mcommit 1ff49d2739b67bfb5db76b8bac3687b99b1d236f[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: PJBcodingz <pjbcodingz@gmail.com>
+Date:   Wed Jun 15 21:12:33 2022 +0530
+
+    Using Basic Redux react-redux only
+
+[33mcommit 487ba4754d2621386ce5b5edd33564dbdf996025[m
+Author: PJBcodingz <pjbcodingz@gmail.com>
+Date:   Wed Jun 15 14:08:59 2022 +0530
+
+     Basic redux structure

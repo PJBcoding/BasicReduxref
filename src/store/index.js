@@ -1,7 +1,23 @@
-import { createStore } from 'redux';
+/* import { createStore } from 'redux'; */
+import { configureStore } from '@reduxjs/toolkit';
+import authSlice from './authSlice';
+import counterSlice from './counterSlice';
 
-const initialState = { counter: 0, showCounter: true };
-const counterReducer = (state = initialState, action) => {
+const store = configureStore({
+    reducer: { counter: counterSlice.reducer, auth: authSlice.reducer }
+});
+
+export const counterActions = counterSlice.actions;
+export const authActions = authSlice.actions;
+
+export default store;
+
+
+
+
+
+
+/* const counterReducer = (state = initialState, action) => {
 
     if (action.type === 'INCREMENT') {
         return {
@@ -30,8 +46,9 @@ const counterReducer = (state = initialState, action) => {
     }
 
     return state;
-};
+}; 
 const store = createStore(counterReducer);
+*/
 
-export default store;
+
 
